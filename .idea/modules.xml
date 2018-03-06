@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MiniTwitter.iml" filepath="$PROJECT_DIR$/MiniTwitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MiniTwitter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MiniTwitter_main.iml" group="MiniTwitter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MiniTwitter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MiniTwitter_test.iml" group="MiniTwitter" />
+    </modules>
+  </component>
+</project>
