@@ -23,6 +23,7 @@ public class UserDaoImpl implements UserDao {
     private final String CREATE_USER = "INSERT INTO people(handle, name) values(:handle, :name)";
     private final String GET_ALL_USERS = "SELECT * FROM people";
     private final String GET_USER_BY_ID = "SELECT * FROM people WHERE id = :id";
+    private final String GET_FOLLOWERS = "SELECT * FROM PEOPLE WHERE id IN (SELECT follower_person_id FROM followers WHERE person_id = :id)";
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -48,6 +49,13 @@ public class UserDaoImpl implements UserDao {
         Map<String, Object> parameters = new HashMap<String, Object>();
         parameters.put("id", id);
         return namedParameterJdbcTemplate.queryForObject(GET_USER_BY_ID, parameters, new UserMapper());
+    }
+
+    @Override
+    public List<User> findUserFollowers(int id) {
+        Map<String, Object> parameters = new HashMap<String, Object>();
+        parameters.put("id", id);
+        return namedParameterJdbcTemplate.query(GET_FOLLOWERS, parameters, new UserMapper());
     }
 }
 

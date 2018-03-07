@@ -11,4 +11,6 @@ public interface UserDao {
     public List<User> findAll();
 
     public User findUserById(int id);
+
+    public List<User> findUserFollowers(int id);
 }

@@ -41,6 +41,13 @@ public class UserDaoTest {
         assertNotNull(user);
     }
 
+    @Test
+    public void findUserFollowers() {
+        List<User> users = userDao.findUserFollowers(1);
+        assertNotNull(users);
+        assertTrue(users.size() > 0);
+    }
+
     private User getUser() {
         User user = new User();
         user.setHandle("flash");
