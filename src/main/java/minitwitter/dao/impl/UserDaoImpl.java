@@ -24,6 +24,7 @@ public class UserDaoImpl implements UserDao {
     private final String GET_ALL_USERS = "SELECT * FROM people";
     private final String GET_USER_BY_ID = "SELECT * FROM people WHERE id = :id";
     private final String GET_FOLLOWERS = "SELECT * FROM PEOPLE WHERE id IN (SELECT follower_person_id FROM followers WHERE person_id = :id)";
+    private final String GET_FOLLOWING = "SELECT p.* FROM people p, followers f WHERE p.id = f.person_id AND f.follower_person_id = :id";
     private final String GET_MESSAGES = "SELECT DISTINCT * from MESSAGES m INNER JOIN followers f ON m.person_id = f.person_id WHERE (m.person_id = :id or (m.person_id = f.person_id AND f.follower_person_id = :id))";
 
     @Autowired
@@ -64,5 +65,12 @@ public class UserDaoImpl implements UserDao {
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("id", id);
         return namedParameterJdbcTemplate.query(GET_FOLLOWERS, parameters, new UserMapper());
+    }
+
+    @Override
+    public List<User> findUserFollowing(int id) {
+        Map<String, Object> parameters = new HashMap<>();
+        parameters.put("id", id);
+        return namedParameterJdbcTemplate.query(GET_FOLLOWING, parameters, new UserMapper());
     }
 }

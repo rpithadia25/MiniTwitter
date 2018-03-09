@@ -27,4 +27,9 @@ public class MiniTwitterController {
     public List<User> getFollowers(@PathVariable(value = "userId") Integer userId) {
         return userDao.findUserFollowers(userId);
     }
+
+    @GetMapping(value = "/following/{userId}")
+    public List<User> getFollowing(@PathVariable(value = "userId") Integer userId) {
+        return userDao.findUserFollowing(userId);
+    }
 }

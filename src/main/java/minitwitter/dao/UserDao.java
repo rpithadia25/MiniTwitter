@@ -16,4 +16,6 @@ public interface UserDao {
     List<Message> fetchMessages(int id);
 
     List<User> findUserFollowers(int id);
+
+    List<User> findUserFollowing(int id);
 }
