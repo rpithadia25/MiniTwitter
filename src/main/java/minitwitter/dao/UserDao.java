@@ -18,4 +18,8 @@ public interface UserDao {
     List<User> findUserFollowers(int id);
 
     List<User> findUserFollowing(int id);
+
+    void followUser(String follower, String userToFollow);
+
+    void unfollowUser(String follower, String userToFollow);
 }

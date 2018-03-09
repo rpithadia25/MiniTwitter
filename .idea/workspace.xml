@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f063566-d2b9-46c2-bd54-258605632b91" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java" afterPath="$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiniTwitterController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MiniTwitterController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +71,21 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="345">
+              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/minitwitter/dao/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,23 +104,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="-936">
+              <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
-                <element signature="e#2171#2172#0" expanded="true" />
-                <marker date="1520574457797" expanded="true" signature="818:873" ph="INSERT INTO people... " />
-                <marker date="1520574457797" expanded="true" signature="918:938" ph="SELECT * FRO... people" />
-                <marker date="1520574457797" expanded="true" signature="984:1019" ph="SELECT * FRO... people" />
-                <marker date="1520574457797" expanded="true" signature="1064:1161" ph="SELECT * FRO... people" />
-                <marker date="1520574457797" expanded="true" signature="1098:1160" ph="SELECT follo... followers" />
-                <marker date="1520574457797" expanded="true" signature="1206:1296" ph="SELECT * FRO... PEOPLE" />
-                <marker date="1520574457797" expanded="true" signature="1206:1299" ph="SELECT p.* F... people" />
-                <marker date="1520574457797" expanded="true" signature="1343:1516" ph="SELECT * FRO... PEOPLE" />
+                <element signature="e#2794#2795#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <marker date="1520579134970" expanded="true" signature="900:955" ph="INSERT INTO people... " />
+                <marker date="1520579134970" expanded="true" signature="1009:1029" ph="SELECT * FRO... people" />
+                <marker date="1520579134970" expanded="true" signature="1083:1118" ph="SELECT * FRO... people" />
+                <marker date="1520579134970" expanded="true" signature="1172:1269" ph="SELECT * FRO... people" />
+                <marker date="1520579134970" expanded="true" signature="1206:1268" ph="SELECT follo... followers" />
+                <marker date="1520579134970" expanded="true" signature="1323:1413" ph="SELECT * FRO... PEOPLE" />
+                <marker date="1520579134970" expanded="true" signature="1323:1416" ph="SELECT p.* F... people" />
+                <marker date="1520579134970" expanded="true" signature="1470:1643" ph="SELECT * FRO... PEOPLE" />
+                <marker date="1520579134970" expanded="true" signature="1697:1741" ph="SELECT id FR... people" />
+                <marker date="1520579134970" expanded="true" signature="1795:1944" ph="SELECT f.* F... followers" />
+                <marker date="1520579134970" expanded="true" signature="1828:1943" ph="SELECT f.fol... followers" />
+                <marker date="1520579134970" expanded="true" signature="1998:2085" ph="INSERT INTO followers... " />
+                <marker date="1520579134970" expanded="true" signature="2139:2227" ph="DELETE FROM followers... " />
               </folding>
             </state>
           </provider>
@@ -141,27 +155,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/configuration/SecurityConfiguration.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="66" lean-forward="true" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+            <state relative-caret-position="270">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomAuthenticationProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/configuration/CustomAuthenticationProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -540,9 +551,9 @@
         <option value="$PROJECT_DIR$/src/main/java/minitwitter/model/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/minitwitter/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/minitwitter/mapper/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java" />
       </list>
     </option>
   </component>
@@ -552,9 +563,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="960" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -627,6 +638,52 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniTwitter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniTwitter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniTwitter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniTwitter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniTwitter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="minitwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MiniTwitter" type="b2602c69:ProjectViewProjectNode" />
@@ -947,7 +1004,7 @@
       <workItem from="1520311971684" duration="916000" />
       <workItem from="1520314556296" duration="755000" />
       <workItem from="1520316975245" duration="4936000" />
-      <workItem from="1520393492878" duration="14644000" />
+      <workItem from="1520393492878" duration="19095000" />
     </task>
     <servers />
   </component>
@@ -984,10 +1041,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22058000" />
+    <option name="totallyTimeSpent" value="26509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="960" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="960" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1096,16 +1153,21 @@
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2171#2172#0" expanded="true" />
-            <marker date="1520574457797" expanded="true" signature="818:873" ph="INSERT INTO people... " />
-            <marker date="1520574457797" expanded="true" signature="918:938" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="984:1019" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="1064:1161" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="1098:1160" ph="SELECT follo... followers" />
-            <marker date="1520574457797" expanded="true" signature="1206:1296" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1520574457797" expanded="true" signature="1206:1299" ph="SELECT p.* F... people" />
-            <marker date="1520574457797" expanded="true" signature="1343:1516" ph="SELECT * FRO... PEOPLE" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <marker date="1520579134970" expanded="true" signature="900:955" ph="INSERT INTO people... " />
+            <marker date="1520579134970" expanded="true" signature="1009:1029" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1083:1118" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1172:1269" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1206:1268" ph="SELECT follo... followers" />
+            <marker date="1520579134970" expanded="true" signature="1323:1413" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1520579134970" expanded="true" signature="1323:1416" ph="SELECT p.* F... people" />
+            <marker date="1520579134970" expanded="true" signature="1470:1643" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1520579134970" expanded="true" signature="1697:1741" ph="SELECT id FR... people" />
+            <marker date="1520579134970" expanded="true" signature="1795:1944" ph="SELECT f.* F... followers" />
+            <marker date="1520579134970" expanded="true" signature="1828:1943" ph="SELECT f.fol... followers" />
+            <marker date="1520579134970" expanded="true" signature="1998:2085" ph="INSERT INTO followers... " />
+            <marker date="1520579134970" expanded="true" signature="2139:2227" ph="DELETE FROM followers... " />
           </folding>
         </state>
       </provider>
@@ -1155,9 +1217,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,16 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/minitwitter/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1348,27 +1398,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1412,6 +1441,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/MiniTwitterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1433,56 +1482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/MiniTwitterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2171#2172#0" expanded="true" />
-            <marker date="1520574457797" expanded="true" signature="818:873" ph="INSERT INTO people... " />
-            <marker date="1520574457797" expanded="true" signature="918:938" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="984:1019" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="1064:1161" ph="SELECT * FRO... people" />
-            <marker date="1520574457797" expanded="true" signature="1098:1160" ph="SELECT follo... followers" />
-            <marker date="1520574457797" expanded="true" signature="1206:1296" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1520574457797" expanded="true" signature="1206:1299" ph="SELECT p.* F... people" />
-            <marker date="1520574457797" expanded="true" signature="1343:1516" ph="SELECT * FRO... PEOPLE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/mapper/MessageMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1495,10 +1494,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/controller/MiniTwitterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/minitwitter/dao/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/minitwitter/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <marker date="1520579134970" expanded="true" signature="900:955" ph="INSERT INTO people... " />
+            <marker date="1520579134970" expanded="true" signature="1009:1029" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1083:1118" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1172:1269" ph="SELECT * FRO... people" />
+            <marker date="1520579134970" expanded="true" signature="1206:1268" ph="SELECT follo... followers" />
+            <marker date="1520579134970" expanded="true" signature="1323:1413" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1520579134970" expanded="true" signature="1323:1416" ph="SELECT p.* F... people" />
+            <marker date="1520579134970" expanded="true" signature="1470:1643" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1520579134970" expanded="true" signature="1697:1741" ph="SELECT id FR... people" />
+            <marker date="1520579134970" expanded="true" signature="1795:1944" ph="SELECT f.* F... followers" />
+            <marker date="1520579134970" expanded="true" signature="1828:1943" ph="SELECT f.fol... followers" />
+            <marker date="1520579134970" expanded="true" signature="1998:2085" ph="INSERT INTO followers... " />
+            <marker date="1520579134970" expanded="true" signature="2139:2227" ph="DELETE FROM followers... " />
           </folding>
         </state>
       </provider>
