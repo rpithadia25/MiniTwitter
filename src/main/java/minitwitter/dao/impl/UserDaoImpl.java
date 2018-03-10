@@ -87,7 +87,7 @@ public class UserDaoImpl implements UserDao {
         int followerUserId = getUserIdFromHandle(follower);
 
         if (followerUserId != userId) {
-            Map<String, Integer> parameters = new HashMap<String, Integer>();
+            Map<String, Integer> parameters = new HashMap<>();
             parameters.put("userId", userId);
             parameters.put("followerUserId", followerUserId);
 
@@ -107,7 +107,7 @@ public class UserDaoImpl implements UserDao {
         int userId = getUserIdFromHandle(userToFollow);
         int followerUserId = getUserIdFromHandle(follower);
 
-        Map<String, Integer> parameters = new HashMap<String, Integer>();
+        Map<String, Integer> parameters = new HashMap<>();
         parameters.put("userId", userId);
         parameters.put("followerUserId", followerUserId);
         namedParameterJdbcTemplate.update(UNFOLLOW_USER, parameters);
@@ -117,15 +117,12 @@ public class UserDaoImpl implements UserDao {
     public String getHandle(HttpServletRequest request) {
         byte[] decodedBytes = Base64.getDecoder().decode(request.getHeader("Authorization").split(" ")[1]);
         String authorizationContents = new String(decodedBytes);
-        System.out.println("Username: " + authorizationContents.split(":")[0]);
         return authorizationContents.split(":")[0];
     }
 
     public int getUserIdFromHandle(String handle) {
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("handle", handle);
-        System.out.println("in getUserIdFromHandle");
-        System.out.println("Handle : " + handle);
         return namedParameterJdbcTemplate.queryForObject(GET_USERID_FROM_HANDLE, parameters, Integer.class);
     }
 }
