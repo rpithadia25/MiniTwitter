@@ -17,8 +17,8 @@ public class MiniTwitterController {
     private UserDaoImpl userDao;
 
     @GetMapping(value = "/messages/{userId}")
-    public List<Message> getMessages(@PathVariable(value = "userId") int userId) {
-        return userDao.fetchMessages(userId);
+    public List<Message> getMessages(@PathVariable(value = "userId") int userId, @RequestParam(value = "search", required = false) String searchParameter) {
+        return userDao.fetchMessages(userId, searchParameter);
     }
 
     @GetMapping(value = "/followers/{userId}")

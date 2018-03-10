@@ -60,9 +60,14 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public List<Message> fetchMessages(int id) {
+    public List<Message> fetchMessages(int id, String searchParameter) {
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("id", id);
+
+        if (searchParameter != null && !searchParameter.trim().isEmpty()) {
+            return namedParameterJdbcTemplate.query(GET_MESSAGES + "AND m.content LIKE '%" + searchParameter + "%'", parameters, new MessageMapper());
+        }
+
         return namedParameterJdbcTemplate.query(GET_MESSAGES, parameters, new MessageMapper());
     }
 

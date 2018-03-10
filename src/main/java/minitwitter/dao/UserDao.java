@@ -13,7 +13,7 @@ public interface UserDao {
 
     User findUserById(int id);
 
-    List<Message> fetchMessages(int id);
+    List<Message> fetchMessages(int id, String searchParameter);
 
     List<User> findUserFollowers(int id);
 
