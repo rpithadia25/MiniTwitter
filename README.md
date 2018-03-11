@@ -13,6 +13,10 @@ Username:		sa
 
 Password:		{please leave it blank}
 
+# Postman Collection
+
+Please find the Postman collection under resources "MiniTwitter.postman_collection.json"
+
 # Swagger Documentation
 
 http://localhost:8080/swagger-ui.html#/mini45twitter45controller

@@ -1,0 +1,241 @@
+{
+	"info": {
+		"name": "MiniTwitter",
+		"_postman_id": "d01bdaf1-3f5f-d875-1914-d617f171b082",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Followers by User ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "19772ef2-b962-4821-9c48-699d86e9838b",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "batman",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "batman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/followers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"followers",
+						"1"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET Messages by User ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "36fe7597-a88c-450a-a635-128d3d434a7b",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/messages/1?search=gravida",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"messages",
+						"1"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "gravida",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET User Following list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/following/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"following",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FOLLOW User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "batman",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "batman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/follow/ironman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"follow",
+						"ironman"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UNFOLLOW User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "batman",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "batman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/unfollow/ironman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"unfollow",
+						"ironman"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Popular Users",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "batman",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "batman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/twitter/popularusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"twitter",
+						"popularusers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
