@@ -1,6 +1,7 @@
 package minitwitter.dao;
 
 import minitwitter.model.Message;
+import minitwitter.model.PopularFollower;
 import minitwitter.model.User;
 
 import java.util.List;
@@ -22,4 +23,6 @@ public interface UserDao {
     void followUser(String follower, String userToFollow);
 
     void unfollowUser(String follower, String userToFollow);
+
+    List<PopularFollower> findPopularUsers();
 }

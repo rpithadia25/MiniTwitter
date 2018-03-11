@@ -23,7 +23,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         String name = authentication.getName();
         String password = authentication.getCredentials().toString();
 
-        // TODO : Should check with database or some services for authentication
+        // TODO : Should check with database or some other service for authentication
         if (userService.getUserNameByID(name) != null) {
             return new UsernamePasswordAuthenticationToken(
                     name, password, new ArrayList<>());

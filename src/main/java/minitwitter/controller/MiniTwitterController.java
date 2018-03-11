@@ -2,6 +2,7 @@ package minitwitter.controller;
 
 import minitwitter.dao.impl.UserDaoImpl;
 import minitwitter.model.Message;
+import minitwitter.model.PopularFollower;
 import minitwitter.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,5 +42,10 @@ public class MiniTwitterController {
     public void unfollowUser(HttpServletRequest request, @PathVariable(value = "handle") String handle) {
         String userName = userDao.getHandle(request);
         userDao.unfollowUser(userName, handle);
+    }
+
+    @GetMapping(value = "/popularusers")
+    public List<PopularFollower> getPopularUsers() {
+        return userDao.findPopularUsers();
     }
 }

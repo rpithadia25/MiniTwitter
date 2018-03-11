@@ -2,8 +2,10 @@ package minitwitter.dao.impl;
 
 import minitwitter.dao.UserDao;
 import minitwitter.mapper.MessageMapper;
+import minitwitter.mapper.PopularFollowerMapper;
 import minitwitter.mapper.UserMapper;
 import minitwitter.model.Message;
+import minitwitter.model.PopularFollower;
 import minitwitter.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
@@ -32,6 +34,26 @@ public class UserDaoImpl implements UserDao {
     private final String GET_FOLLOWER_BY_ID     = "SELECT * from PEOPLE WHERE id = (SELECT f.follower_person_id FROM followers f WHERE f.person_id = :userId and f.follower_person_id = :followerUserId)";
     private final String FOLLOW_USER            = "INSERT INTO followers (person_id, follower_person_id) VALUES (:userId, :followerUserId)";
     private final String UNFOLLOW_USER          = "DELETE FROM followers WHERE person_id = :userId and follower_person_id = :followerUserId";
+    private final String GET_POPULAR_FOLLOWER   = "SELECT user.id, follower.follower_id, COUNT " +
+                                                  "FROM ( " +
+                                                        "SELECT id, max(followercount) COUNT " +
+                                                        "FROM ( " +
+                                                                "SELECT fa.person_id id, fb.person_id follower_id, COUNT(fb.follower_person_id) followercount " +
+                                                                "FROM followers fa, followers fb " +
+                                                                "WHERE fa.follower_person_id = fb.person_id " +
+                                                                "GROUP BY fa.person_id, fb.person_id " +
+                                                                "ORDER BY followercount DESC" +
+                                                            ")" +
+                                                            "GROUP BY id " +
+                                                  ") user , (" +
+                                                        "SELECT fa.person_id id, fb.person_id follower_id, COUNT(fb.follower_person_id) followercount " +
+                                                        "FROM followers fa, followers fb " +
+                                                        "WHERE fa.follower_person_id = fb.person_id " +
+                                                        "GROUP BY fa.person_id, fb.person_id " +
+                                                        "ORDER BY followercount DESC" +
+                                                    ") follower " +
+                                                   "WHERE user.id = follower.id " +
+                                                   "AND user.count = follower.followercount";
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
@@ -116,6 +138,11 @@ public class UserDaoImpl implements UserDao {
         parameters.put("userId", userId);
         parameters.put("followerUserId", followerUserId);
         namedParameterJdbcTemplate.update(UNFOLLOW_USER, parameters);
+    }
+
+    @Override
+    public List<PopularFollower> findPopularUsers() {
+        return namedParameterJdbcTemplate.query(GET_POPULAR_FOLLOWER, new PopularFollowerMapper());
     }
 
     // Fetches the Username from Http Basic Auth
