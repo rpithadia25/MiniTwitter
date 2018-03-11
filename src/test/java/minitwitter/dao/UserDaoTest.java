@@ -1,5 +1,6 @@
 package minitwitter.dao;
 
+import minitwitter.model.Message;
 import minitwitter.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -42,8 +43,22 @@ public class UserDaoTest {
     }
 
     @Test
+    public void fetchMessages() {
+        List<Message> messages = userDao.fetchMessages(1, "");
+        assertNotNull(messages);
+        assertTrue(messages.size() > 0);
+    }
+
+    @Test
     public void findUserFollowers() {
         List<User> users = userDao.findUserFollowers(1);
+        assertNotNull(users);
+        assertTrue(users.size() > 0);
+    }
+
+    @Test
+    public void findUserFollowing() {
+        List<User> users = userDao.findUserFollowing(1);
         assertNotNull(users);
         assertTrue(users.size() > 0);
     }
